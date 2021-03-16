@@ -1,0 +1,48 @@
+/*-----navbar------*/
+
+.logo{
+    width: 15%;
+}
+
+.link-nav{
+    color: black;
+    font-size: 80%;
+    text-decoration: none;
+}
+
+.link-nav:hover{
+    color: #eb9a5e;
+}
+
+.phone-nav{
+    color: #eb9a5e;
+    margin-top: 1rem;
+}
+
+.phone-number-nav{
+    color: #eb9a5e;
+    margin-top: 1rem;
+}
+
+.social-network-nav{
+    margin-top: 1rem;
+}
+
+.shopping-cart-nav{
+    color: #eb9a5e;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
+}
+
+/*-----banière------*/
+
+.offer{
+    background-color:#eb9a5e;
+}
+
+.text-offer{
+    text-align: center;
+    color: white;
+    font-size: 100%;
+}
