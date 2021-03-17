@@ -132,3 +132,9 @@
 .shop{
     border: red;
 }
+
+/*-----news------*/
+
+.news-description{
+    text-align: center;
+}

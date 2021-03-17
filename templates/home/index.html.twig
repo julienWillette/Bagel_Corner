@@ -22,7 +22,7 @@
         </div>
         <div class="row justify-content-around">
             {% for bagel in bagels %}
-            <div class="col-xl-3 col-l-6 col-lg-6 col-md-6 col-sm-11 mt-2 mb-2 mx-auto">
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-11 mt-2 mb-2 mx-auto">
                 <div class="card card-size">
                     <img src="{{bagel.picture}}" class="card-img-top" alt="...">
                     <div class="card-body">
@@ -32,7 +32,6 @@
                                 <p class="card-price">{{ bagel.price }}€</p>
                             </div>
                         </div>
-                      </a>
                     </div>
                   </div>
             </div>
@@ -47,5 +46,23 @@
             <a class="see-menu-2" href="">></a>
         </div>
     </div>
+</div>
+<div class="row justify-content-around">
+    {% for new in news %}
+    <div class="col-xl-3 col-l-6 col-lg-3 col-md-3 col-sm-11 mt-2 mb-2 mx-auto">
+        <div class="card card-size">
+            <img src="{{new.picture}}" class="card-img-top" alt="...">
+            <div class="card-body">
+                <p class="news-description">{{new.description}}</p>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <a class="see-menu-1" href="">AFFICHER PLUS</a>
+                    <a class="see-menu-2" href="">></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
 </div>
 {% endblock %}
