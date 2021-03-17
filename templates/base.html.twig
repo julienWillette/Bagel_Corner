@@ -24,15 +24,57 @@
                 <a class="link-nav" href="">CARTE</a>
                 <a class="link-nav" href="">À PROPOS</a>
                 <P class="phone-nav"><i class="fas fa-phone-alt"></i><p class="phone-number-nav">01.40.76.07.90</p></P>
-                <p class="social-network-nav"><i class="fab fa-linkedin-in"></i></p>
-                <p class="social-network-nav"><i class="fab fa-facebook-square"></i></p>
-                <p class="social-network-nav"><i class="fab fa-twitter"></i></p>
-                <p class="social-network-nav"><i class="fab fa-instagram"></i></p>
-                <p class="shopping-cart-nav"><i class="fas fa-shopping-cart"></i></p>
+                <a class="social-network-nav" href=""><i class="fab fa-linkedin-in"></i></a>
+                <a class="social-network-nav" href=""><i class="fab fa-facebook-square"></i></a>
+                <a class="social-network-nav" href=""><i class="fab fa-twitter"></i></a>
+                <a class="social-network-nav" href=""><i class="fab fa-instagram"></i></a>
+                <a class="shopping-cart-nav" href=""><i class="fas fa-shopping-cart"></i></a>
             </div>
         </nav>
     </header>
     {% block body %}{% endblock %}
+    <footer class="footer">
+        <div class="container-fluid">
+            <div class="container line">
+                <div class="row">
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-5 mb-2 mx-auto">
+                        <h3 class="title-footer">NEWSLETTER</h3>
+                        <hr class="hr-footer-1">
+                        <p class="text-footer">PROFITEZ DES OFFRES AVEC LA NEWSLETTER</p>
+                        <div class="d-flex justify-content-center pt-3">
+                            <input type="text" class="form-control input-footer" placeholder="VOTRE ADRESSE MAIL" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                        </div>
+                        <div class="d-flex justify-content-center pb-3">
+                            <button type="button" class="btn btn-dark btn-footer">ENVOYER</button>
+                        </div>
+                        <div class="d-flex justify-content-center pt-3">
+                            <p class="phone-logo-footer"><i class="fas fa-phone-alt"></i></p>
+                            <p class="phone-number-footer">01.40.76.07.90</p>  
+                        </div>
+                        <hr class="hr-footer-2">
+                        <div class="d-flex justify-content-center">
+                            <a class="social-network-footer" href=""><i class="fab fa-linkedin-in size-logo"></i></a>
+                            <a class="social-network-footer" href=""><i class="fab fa-facebook-square"></i></a>
+                            <a class="social-network-footer" href=""><i class="fab fa-twitter"></i></a>
+                            <a class="social-network-footer" href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-5 mb-2 mx-auto">
+                        <img class="map-footer" src="https://i.postimg.cc/T140QZrL/Capture-d-cran-2021-03-17-12-30-25.png" alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="d-flex justify-content-between justify-content-around mt-4 mb-4">
+                        <a class="link-footer" href="">Allergènes</a>
+                        <a class="link-footer" href="">Mentions légales</a>
+                        <a class="link-footer" href="">Contact</a>
+                        <a class="link-footer" href="">Éco responsabilité</a>
+                        <a class="link-footer" href="">Recrutement</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
     {% block javascripts %}
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
