@@ -7,8 +7,44 @@
     <p class="text-offer">OFFRE EXCLUSIVEMENT SUR CE SITE :-10% SUR TOUTE COMMANDE PASSÉE AVANT 12H00 !!!</p>
 </div>
 <div class="img-background-presentation">
-    <div class="wrapper">
-        <div class="content">
+    <img src="https://i.postimg.cc/DzYGMNLc/Capture-d-cran-2021-03-16-19-12-54.png" style="width: 100%;">
+</div>
+
+<div class="container-fluid">
+    <div class="container-fluid">
+        <h1 class=" pt-5 menu" id="Projets">LA CARTE</h1>
+        <div class="d-flex justify-content-between justify-content-around mt-2 mb-2">
+            <a class="menu-choice-1" href="">BAGELS</a>
+            <a class="menu-choice" href="">BOX</a>
+            <a class="menu-choice" href="">SALADES</a>
+            <a class="menu-choice" href="">PETIT DEJ'</a>
+            <a class="menu-choice-2" href="">BOISSONS</a>
+        </div>
+        <div class="row justify-content-around">
+            {% for bagel in bagels %}
+            <div class="col-xl-3 col-l-6 col-lg-6 col-md-6 col-sm-11 mt-2 mb-2 mx-auto">
+                <div class="card card-size">
+                    <img src="{{bagel.picture}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div cass="row">
+                            <div class="d-flex justify-content-between">
+                                <p class="card-title">{{ bagel.name}}</p>
+                                <p class="card-price">{{ bagel.price }}€</p>
+                            </div>
+                        </div>
+                      </a>
+                    </div>
+                  </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="d-flex justify-content-center">
+            <a class="see-menu-1" href="">VOIR LA CARTE</a>
+            <a class="see-menu-2" href="">></a>
         </div>
     </div>
 </div>

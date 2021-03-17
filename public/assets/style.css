@@ -53,11 +53,82 @@
 }
 
 .img-background-presentation {
-    background-image: url("https://i.postimg.cc/mrSsLq9J/Capture-d-cran-2021-03-16-19-12-54.png");
     background-size: cover;
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     height: 600px;  
+  }
+
+/*-----menu------*/
+
+.menu{
+    text-align: center;
 }
 
+.menu-choice{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.menu-choice-1{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-left: 5rem;
+}
+
+.menu-choice-2{
+    text-align: center;
+    text-decoration: none;
+    color: black;
+    margin-right: 5rem;
+}
+
+.menu-choice:hover{
+    text-align: center;
+    text-decoration: underline;
+    color: #eb9a5e;
+}
+
+.img-menu{
+    width: 50%;
+}
+
+.card-size{
+    border: none;
+}
+
+.card-price{
+    color: #eb9a5e;
+}
+
+.see-menu-1{
+    color: black;
+    text-decoration: none;
+}
+
+.see-menu-1:hover{
+    color: black;
+    text-decoration: none;
+}
+
+.see-menu-2{
+    color: #eb9a5e;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+.see-menu-2:hover{
+    color: #eb9a5e;
+    text-decoration: none;
+    margin-left: 2rem;
+}
+
+/*-----shop------*/
+
+.shop{
+    border: red;
+}
