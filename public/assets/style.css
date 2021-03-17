@@ -138,3 +138,10 @@
 .news-description{
     text-align: center;
 }
+
+/*-----company------*/
+
+.card-company-size{
+    border: none;
+    width: 50%;
+}
