@@ -1,0 +1,152 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Hello HomeController!{% endblock %}
+
+{% block body %}
+<div class="offer">
+    <p class="text-offer">OFFRE EXCLUSIVEMENT SUR CE SITE :-10% SUR TOUTE COMMANDE PASSÉE AVANT 12H00 !!!</p>
+</div>
+<div class="img-background-presentation">
+    <img src="https://i.postimg.cc/DzYGMNLc/Capture-d-cran-2021-03-16-19-12-54.png" style="width: 100%;">
+</div>
+
+<div class="container">
+    <div class="container">
+            <h1 class=" pt-3 pb-4 menu" id="Projets">LA CARTE</h1>
+            <div class="d-flex justify-content-around mt-2 mb-2">
+                <a class="menu-choice-1" href="">BAGELS</a>
+                <a class="menu-choice" href="">BOX</a>
+                <a class="menu-choice" href="">SALADES</a>
+                <a class="menu-choice" href="">PETIT DEJ'</a>
+                <a class="menu-choice-2" href="">BOISSONS</a>
+            </div>
+        </div>
+        <div class="row justify-content-around">
+            {% for bagel in bagels %}
+            <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 col-xs-6 mt-2 mb-2 mx-auto">
+                <div class="card card-size">
+                    <img src="{{bagel.picture}}" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <div cass="row">
+                            <div class="d-flex justify-content-between">
+                                <p class="card-title">{{ bagel.name}}</p>
+                                <p class="card-price">{{ bagel.price }}€</p>
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="d-flex justify-content-center">
+            <a class="see-menu-1" href="">VOIR LA CARTE</a>
+            <a class="see-menu-2" href="">></a>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-xs-2">
+
+        </div>
+        <div class="col-xl-10 col-lg-10 col-md-10 col-sm-10 col-xs-10 address-color">
+            <div class="container-fluid address-color">
+                <div class='row'>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 mb-2 mx-auto">
+                        <img class="img-address" src="https://i.postimg.cc/wMZR4wNf/Capture-d-cran-2021-03-17-15-40-00.png" alt="">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-xs-6 mt-2 mb-2 mx-auto">
+                        <h1 class="h1-address">PARIS 8ÈME</h1>
+                        <h4 class="h2-address">LE PLUS CHIC DU CORNER !</h2>
+                        <p class="text-address-l-1">Mais aussi le plus savoureux..</p>
+                        <p class="text-address-l-2">À 2 minutes à pied de la plus belle avenue du monde,</p>
+                        <p class="text-address-l-3">nous vous acceuillons dans un espace dédié à la gourmandise.</p>
+                        <div class="d-flex justify-content-center pt-4">
+                            <button type="button" class="btn btn-primary color-btn-address">À Propos</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div>
+    <img class="img-video" src="https://i.postimg.cc/wB2RJX6r/Capture-d-cran-2021-03-17-16-45-18.png" alt="">
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xl-11 col-lg-11 col-md-11 col-sm-11 col-xs-11 avis">
+            <div class="container-fluid ">
+                <div class="container">
+                    <div class="container">
+                        <div class="d-flex justify-content-center">
+                            <img class="quotation-marks-1" src="https://i.postimg.cc/Vk9VTQ32/Capture-d-cran-2021-03-17-19-07-51.png" alt="">
+                            <hr class="hr-avis-1">
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <img class="picture-avis" src="https://i.postimg.cc/6QL0bbK5/Capture-d-cran-2021-03-17-17-16-08.png" alt="">
+                        </div>
+                        <p class="text-avis-l-1">Mais aussi le plus savoureux..</p>
+                        <p class="text-avis-l-2">À 2 minutes à pied de la plus belle avenue du monde,</p>
+                        <p class="text-avis-l-3">nous vous acceuillons dans un espace dédié à la gourmandise.</p>
+                        <h5 class="nom-avis">LÉA COHEN</h5>
+                        <div class='row'>
+                            <div class="d-flex justify-content-center">
+                                <a class="circle-avis" href=""><i class="far fa-circle"></i></a>
+                                <a class="circle-avis-choice" href=""><i class="far fa-dot-circle"></i>
+                                <a class="circle-avis" href=""><i class="far fa-circle"></i></a>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-center">
+                            <hr class="hr-avis-2">
+                            <img class="quotation-marks-2" src="https://i.postimg.cc/LXqdGQkf/Capture-d-cran-2021-03-17-19-08-04.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-xl-1 col-lg-1 col-md-1 col-sm-1 col-xs-1">
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-around">
+    {% for new in news %}
+    <div class="col-xl-3 col-l-6 col-lg-3 col-md-3 col-sm-7 col-xs-6 mt-2 mb-2 mx-auto">
+        <div class="card card-size">
+            <img src="{{new.picture}}" class="card-img-top img-news" alt="...">
+            <div class="card-body">
+                <p class="news-description">{{new.description}}</p>
+            </div>
+            <div class="row">
+                <div class="d-flex justify-content-center">
+                    <a class="see-menu-1" href="">AFFICHER PLUS</a>
+                    <a class="see-menu-2" href="">></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+<div class="container">
+    <h1 class=" pt-5 menu" id="Projets">ILS SONT DÉJÀ FANS !</h1>
+    <div class="row justify-content-around">
+        {% for company in company %}
+        <div class="col-xl-2 col-lg-2 col-md-2 col-sm-3 col-xs-6 mt-5 mb-5 mx-auto">
+            <div class="card card-size">
+                <img src="{{company.picture}}" class="card-img-top" alt="...">
+                <div class="card-body">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
