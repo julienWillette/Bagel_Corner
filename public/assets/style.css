@@ -60,13 +60,12 @@
 }
 
 .img-background-presentation {
+    background-image: url("https://i.postimg.cc/DzYGMNLc/Capture-d-cran-2021-03-16-19-12-54.png");
     background-size: cover;
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-position: center;
     background-size: cover;
-    width: 100%;
-    padding-bottom: 1rem;
+    height: 600px;
   }
 
 /*-----menu------*/
