@@ -19,12 +19,13 @@
 .phone-nav{
     color: #eb9a5e;
     margin-top: 1rem;
-    margin-left: 3rem;
+    margin-left: 1rem;
 }
 
 .phone-number-nav{
     color: #eb9a5e;
     margin-top: 1rem;
+    margin-right: 1rem;
 }
 
 .social-network-nav{
@@ -37,14 +38,12 @@
 
 .shopping-cart-nav{
     color: #eb9a5e;
-    margin-left: 3rem;
-    margin-right: 3rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .shopping-cart-nav:hover{
     color: black;
-    margin-left: 3rem;
-    margin-right: 3rem;
 }
 
 /*-----banière------*/
